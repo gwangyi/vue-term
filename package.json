@@ -1,0 +1,61 @@
+{
+  "name": "vue-term",
+  "version": "0.1.0",
+  "description": "xtermjs + vuejs",
+  "main": "dist/vue-term.js",
+  "web": "dist/vue-term.web.js",
+  "repository": "https://github.com/gwangyi/vue-term",
+  "author": "gwangyi",
+  "license": "MIT",
+  "dependencies": {
+    "xterm": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/preset-env": "^7.0.0-beta.38",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "8.0.0-beta.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.2.2",
+    "lodash": "^4.17.5",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.20.1",
+    "vue-eslint-parser": "^2.0.2",
+    "vue-loader": "^13.7.0",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.1"
+  },
+  "scripts": {
+    "watch": "rimraf ./dist && webpack --watch --env.development",
+    "build": "rimraf ./dist && webpack"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "syntax-dynamic-import"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard",
+      "eslint:recommended",
+      "plugin:vue/recommended"
+    ],
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "allowImportExportEverywhere": true
+    }
+  }
+}
