@@ -1,9 +1,9 @@
 {
   "name": "vue-term",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "xtermjs + vuejs",
-  "main": "dist/vue-term.js",
-  "web": "dist/vue-term.web.js",
+  "main": "dist/vue-term.min.js",
+  "web": "dist/vue-term.web.min.js",
   "repository": "https://github.com/gwangyi/vue-term",
   "author": "gwangyi",
   "license": "MIT",
