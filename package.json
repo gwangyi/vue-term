@@ -1,6 +1,6 @@
 {
   "name": "vue-term",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "xtermjs + vuejs",
   "main": "dist/vue-term.js",
   "web": "dist/vue-term.web.js",
